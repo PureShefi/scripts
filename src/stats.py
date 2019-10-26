@@ -10,8 +10,7 @@ def main():
     parser = argparse.ArgumentParser(
     description="print the cpu and memory usage of process and the disk usage of specified path")
     parser.add_argument("process", help="the name of the process", type=str)
-    parser.add_argument(
-        "-p", "--path", help="the path to get the disk usage", type=str)
+    parser.add_argument("-p", "--path", help="the path to get the disk usage", type=str)
     args = parser.parse_args()
 
 
