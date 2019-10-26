@@ -26,10 +26,9 @@ def main():
 
     if args.path is not None:
         disk = psutil.disk_usage(args.path)
-        output = '{0:.2f},{1:.2f},{2:.2f}'.format(cpu, mem, disk.percent)
+        print '{0:.2f},{1:.2f},{2:.2f}'.format(cpu, mem, disk.percent)
     else:
-        output = '{0:.2f},{1:.2f}'.format(cpu, mem)
-    print output
+        print '{0:.2f},{1:.2f}'.format(cpu, mem)
 
 if __name__ == "__main__":
     main()
